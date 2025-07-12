@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: #c3f0ca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.screen {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.screen.active {
+  display: flex;
+}
+
+button {
+  margin: 10px;
+  padding: 15px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  background-color: #88d498;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #56c596;
+}
+
+.backBtn {
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+canvas {
+  background-color: #eef;
+  border: 2px solid #444;
+}
+
+.scoreBoard {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.treeGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.treeGrid div {
+  width: 60px;
+  height: 60px;
+  background: #a8dda8;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.train {
+  margin-top: 20px;
+  font-size: 24px;
+}

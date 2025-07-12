@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Planet Protectors HQ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Main Hub -->
+  <div id="mainMenu" class="screen">
+    <h1>🌍 Planet Protectors HQ</h1>
+    <button onclick="showScreen('plasticPirates')">🚢 Plastic Pirates</button>
+    <button onclick="showScreen('treePlanters')">🌲 Tree Planters United</button>
+    <button onclick="showScreen('mentalMaze')">🧠 Mental Health Maze</button>
+    <button onclick="showScreen('educationExpress')">🚂 Education Express</button>
+  </div>
+
+  <!-- Plastic Pirates -->
+  <div id="plasticPirates" class="screen gameScreen">
+    <button class="backBtn" onclick="showScreen('mainMenu')">⬅️ Back</button>
+    <canvas id="piratesCanvas" width="400" height="600"></canvas>
+    <div class="scoreBoard">Score: <span id="pirateScore">0</span></div>
+  </div>
+
+  <!-- Tree Planters United -->
+  <div id="treePlanters" class="screen gameScreen">
+    <button class="backBtn" onclick="showScreen('mainMenu')">⬅️ Back</button>
+    <div id="treeGame">
+      <h2>Click to Plant Trees! 🌳</h2>
+      <div class="treeGrid" id="treeGrid"></div>
+      <div class="scoreBoard">Trees Planted: <span id="treeScore">0</span></div>
+    </div>
+  </div>
+
+  <!-- Mental Health Maze -->
+  <div id="mentalMaze" class="screen gameScreen">
+    <button class="backBtn" onclick="showScreen('mainMenu')">⬅️ Back</button>
+    <canvas id="mazeCanvas" width="400" height="400"></canvas>
+    <div class="scoreBoard">Orbs: <span id="mazeScore">0</span></div>
+  </div>
+
+  <!-- Education Express -->
+  <div id="educationExpress" class="screen gameScreen">
+    <button class="backBtn" onclick="showScreen('mainMenu')">⬅️ Back</button>
+    <div id="quizGame">
+      <h2 id="quizQuestion">Question appears here</h2>
+      <div id="options"></div>
+      <div class="train">🚂 Train Position: <span id="trainPos">0</span></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
